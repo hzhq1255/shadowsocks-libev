@@ -26,7 +26,8 @@ DIST=ss-libev-win-dist.tar.gz
 all: build
 
 build:
-	cd ../../ && docker build -t $(IMAGE) \
+    cd ../../ && git submodule init && git submodule update \
+	&& docker build -t $(IMAGE) \
 	  -f docker/mingw/Dockerfile \
 	  --build-arg REV=$(REV) --build-arg REPO=$(REPO) \
 	  --build-arg REBUILD="$$(date +%Y-%m-%d-%H-%M-%S)" \

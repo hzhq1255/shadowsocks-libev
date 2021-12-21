@@ -55,7 +55,7 @@ SODIUM_URL=https://download.libsodium.org/libsodium/releases/libsodium-${SODIUM_
 ## PCRE
 PCRE_VER=8.44
 PCRE_SRC=pcre-${PCRE_VER}
-PCRE_URL=https://ftp.pcre.org/pub/pcre/${PCRE_SRC}.tar.gz
+PCRE_URL=https://sourceforge.net/projects/pcre/files/pcre/${PCRE_VER}/${PCRE_SRC}.tar.gz/download
 
 ## c-ares
 CARES_VER=1.16.0

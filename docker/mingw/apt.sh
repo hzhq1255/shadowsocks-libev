@@ -27,5 +27,5 @@ set -e
 dk_prepare() {
     apt-get update -y
     apt-get install --no-install-recommends -y \
-      mingw-w64 aria2 git make automake autoconf libtool ca-certificates
+      mingw-w64 aria2 git make automake autoconf libtool ca-certificates pkg-config m4
 }
